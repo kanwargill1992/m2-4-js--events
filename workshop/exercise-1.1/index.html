@@ -1,7 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style></style>
+    <style>
+      body {
+        background: rgb(2, 0, 36);
+        background: radial-gradient(
+          circle,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 50%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      body::before {
+        content: "Be a quicker clicker!";
+        color: #fff;
+        font-family: "Comic Sans", cursive, sans-serif;
+        font-size: 48px;
+        position: absolute;
+        left: 30px;
+        top: 24px;
+      }
+      .result {
+        color: fuchsia;
+        font-size: 80px;
+        font-family: "Comic Sans", cursive, sans-serif;
+        font-size: 250px;
+      }
+    </style>
   </head>
   <body>
     <p class="result" id="result"></p>
