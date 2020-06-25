@@ -13,7 +13,7 @@ function turnToGreen(event) {
 for (i = 1; i <= 20; i++) {
   const button = document.createElement("button");
   button.id = i;
-  button.innerText = i;
+  button.innerText = "Click Me";
   num.appendChild(button);
 
   button.addEventListener("click", turnToGreen);

@@ -5,7 +5,7 @@ console.log("exercise 1.2");
 const num = document.querySelector("body");
 const num1 = document.querySelector("#result");
 const num2 = document.querySelector("#time");
-let timer = 5000;
+let timer = Math.floor(Math.random() + 5 * 1000);
 //timer
 num2.innerText = timer / 1000;
 let seconds = timer - 1000;
@@ -32,6 +32,6 @@ setTimeout(function () {
 
     num.removeEventListener("click", onClick);
   }
-}, num2 * 1000);
+}, timer);
 
 num.addEventListener("click", onClick);
